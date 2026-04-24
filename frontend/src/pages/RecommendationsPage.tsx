@@ -179,28 +179,46 @@ export function RecommendationsPage() {
     ? 'Relaxed match threshold was used so jobs above hard constraints could still rank.'
     : null;
 
+  const hasNoResultsYet = !loading && !err && items.length === 0 && !computedAt;
+
   return (
     <div className="page page-narrow-centered recommendations-page">
       <header className="page-head">
         <h1 className="page-title">Your picks</h1>
         <p className="page-sub">
-          We match your profile to open roles, rank them, and add short explanations. Hit refresh anytime after you
-          update your profile.
+          We match your profile to open roles, rank them, and add short explanations. Click{' '}
+          <strong>Generate recommendations</strong> to compute new picks after you update your profile.
         </p>
       </header>
 
-      <div className="toolbar toolbar-centered">
-        <button type="button" className="btn btn-ghost" onClick={() => void load()} disabled={loading || computing}>
-          {loading ? 'Loading…' : 'Refresh'}
-        </button>
-        <button type="button" className="btn btn-primary" onClick={() => void compute()} disabled={computing}>
-          {computing ? 'Updating…' : 'Update recommendations'}
-        </button>
-        <Link className="btn btn-ghost" to="/profile">
-          Edit Profile
-        </Link>
+      <div className="rec-toolbar">
+        <div className="rec-toolbar-primary">
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => void compute()}
+            disabled={computing}
+          >
+            {computing ? 'Generating…' : hasNoResultsYet ? 'Generate recommendations' : 'Regenerate recommendations'}
+          </button>
+          <span className="rec-toolbar-hint">Takes about 10–30s — ranks every open role for you.</span>
+        </div>
+        <div className="rec-toolbar-secondary">
+          <button
+            type="button"
+            className="btn btn-ghost btn-small"
+            onClick={() => void load()}
+            disabled={loading || computing}
+            title="Reload saved recommendations from previous runs"
+          >
+            {loading ? 'Loading…' : 'Reload saved'}
+          </button>
+          <Link className="btn btn-ghost btn-small" to="/profile">
+            Edit profile
+          </Link>
+        </div>
         {computing ? (
-          <div style={{ width: '100%', maxWidth: '36rem' }}>
+          <div className="rec-progress">
             <div className="progress-bar-wrap">
               <div className="progress-bar-indeterminate" />
             </div>
@@ -208,7 +226,7 @@ export function RecommendationsPage() {
               {elapsedSeconds < 60
                 ? `Computing… ${elapsedSeconds}s elapsed`
                 : `Computing… ${Math.floor(elapsedSeconds / 60)}m ${elapsedSeconds % 60}s elapsed`}
-              {' · '}Ranking jobs (LLM reasoning available per-job)
+              {' · '}Ranking jobs (per-job AI analysis available after)
             </p>
           </div>
         ) : null}
@@ -477,10 +495,27 @@ export function RecommendationsPage() {
         </div>
       ) : null}
 
-      {!loading && !err && items.length === 0 && !computedAt ? (
-        <p className="muted empty-rec-hint">
-          No recommendations yet. Complete your profile and click &quot;Update recommendations&quot;.
-        </p>
+      {hasNoResultsYet ? (
+        <div className="rec-empty-card">
+          <h2 className="rec-empty-title">Ready when you are</h2>
+          <p className="rec-empty-text">
+            No recommendations yet. Make sure your profile has at least your key skills and preferred locations,
+            then click the button below to get your first ranked list.
+          </p>
+          <div className="rec-empty-actions">
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={() => void compute()}
+              disabled={computing}
+            >
+              Generate my first recommendations
+            </button>
+            <Link className="btn btn-ghost" to="/profile">
+              Review my profile first
+            </Link>
+          </div>
+        </div>
       ) : null}
     </div>
   );

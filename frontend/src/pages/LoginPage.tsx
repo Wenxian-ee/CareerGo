@@ -32,6 +32,10 @@ export function LoginPage() {
     <div className="page narrow-page page-auth">
       <header className="page-head">
         <h1 className="page-title">Sign in</h1>
+        <p className="page-sub">
+          Sign in to get personalised recommendations, save your profile, and see AI-powered analysis for each
+          role.
+        </p>
       </header>
       {err ? <StatusBanner kind="error" title="Sign-in failed" detail={err} /> : null}
       <form className="form-stack" onSubmit={(e) => void submit(e)}>

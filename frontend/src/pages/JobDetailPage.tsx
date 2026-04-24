@@ -47,9 +47,12 @@ export function JobDetailPage() {
 
   return (
     <div className="page page-narrow-centered">
-      <p className="muted small">
-        <Link to="/jobs">← Back to jobs</Link>
-      </p>
+      <div className="back-bar">
+        <Link className="back-chip" to="/jobs">
+          <span className="back-chip-arrow" aria-hidden="true">←</span>
+          <span>Back to jobs</span>
+        </Link>
+      </div>
       {loading ? <p className="muted small">Loading job…</p> : null}
       {err ? <StatusBanner kind="error" title="Could not load this job" detail={err} /> : null}
       {job ? (

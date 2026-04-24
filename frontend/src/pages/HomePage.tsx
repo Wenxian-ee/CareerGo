@@ -35,25 +35,28 @@ export function HomePage() {
           match, and suggest what to learn next. Browse the full catalog anytime (no login needed).
         </p>
         <div className="hero-actions">
-          <Link className="btn btn-ghost" to="/jobs">
-            Job catalog
-          </Link>
           {token ? (
             <>
-              <Link className="btn btn-primary" to="/profile">
-                My profile
+              <Link className="btn btn-primary" to="/recommendations">
+                Get my recommendations
               </Link>
-              <Link className="btn btn-ghost" to="/recommendations">
-                Recommendations
+              <Link className="btn btn-ghost" to="/profile">
+                Edit my profile
+              </Link>
+              <Link className="btn btn-ghost" to="/jobs">
+                Browse all jobs
               </Link>
             </>
           ) : (
             <>
               <Link className="btn btn-primary" to="/register">
-                Register
+                Create an account
               </Link>
               <Link className="btn btn-ghost" to="/login">
                 Sign in
+              </Link>
+              <Link className="btn btn-ghost" to="/jobs">
+                Browse all jobs
               </Link>
             </>
           )}
@@ -81,39 +84,74 @@ export function HomePage() {
         <StatusBanner kind="info" title="Checking backend…" />
       )}
 
-      <section className="card home-cta-card">
-        <h2 className="card-title">Browse all jobs</h2>
-        <p className="card-body">
-          Filter by location, category, source, and more — no account needed. For ranked, personalized suggestions, head
-          to <Link to="/recommendations">Recommendations</Link> after you sign in.
-        </p>
-        <div className="home-cta-actions">
-          <Link className="btn btn-primary" to="/jobs">
-            Open job catalog →
-          </Link>
-        </div>
+      <section className="steps-section">
+        <h2 className="steps-heading">How CareerGo works</h2>
+        <p className="steps-sub">Three steps from sign-up to ranked, explained job matches.</p>
+        <ol className="step-list">
+          <li className="step-card">
+            <span className="step-number">1</span>
+            <div className="step-body">
+              <h3 className="step-title">Create a free account</h3>
+              <p className="step-text">
+                Takes under a minute. Your profile and match history are saved so you can come back anytime.
+              </p>
+              {token ? (
+                <span className="step-status">You&apos;re signed in as {me?.name}.</span>
+              ) : (
+                <Link className="step-link" to="/register">
+                  Register <span aria-hidden="true">→</span>
+                </Link>
+              )}
+            </div>
+          </li>
+          <li className="step-card">
+            <span className="step-number">2</span>
+            <div className="step-body">
+              <h3 className="step-title">Tell us about you</h3>
+              <p className="step-text">
+                Education, skills, preferred salary and locations, work arrangement, experience and projects.
+                The more you fill, the more accurate your matches.
+              </p>
+              {token ? (
+                <Link className="step-link" to="/profile">
+                  Edit my profile <span aria-hidden="true">→</span>
+                </Link>
+              ) : (
+                <span className="step-status step-status-muted">Available after you sign in.</span>
+              )}
+            </div>
+          </li>
+          <li className="step-card">
+            <span className="step-number">3</span>
+            <div className="step-body">
+              <h3 className="step-title">Get ranked recommendations</h3>
+              <p className="step-text">
+                We score every open role on relevance, feasibility and growth, show a skill map, and suggest
+                what to learn next — with short, plain-English explanations.
+              </p>
+              {token ? (
+                <Link className="step-link" to="/recommendations">
+                  View recommendations <span aria-hidden="true">→</span>
+                </Link>
+              ) : (
+                <span className="step-status step-status-muted">Available after you sign in.</span>
+              )}
+            </div>
+          </li>
+        </ol>
       </section>
 
-      <section className="grid-3">
-        <article className="card">
-          <h2 className="card-title">1. Register / sign in</h2>
+      <section className="card home-browse-card">
+        <div className="home-browse-copy">
+          <h2 className="card-title">Just want to look around?</h2>
           <p className="card-body">
-            Accounts are stored in PostgreSQL <code>users</code> (password hash).
+            Browse the full job catalog without signing in. Filter by location, category, job type, source or
+            keywords.
           </p>
-        </article>
-        <article className="card">
-          <h2 className="card-title">2. Full profile</h2>
-          <p className="card-body">
-            Education, skills, preferences, constraints, experience, certifications, languages, and projects match your
-            existing ORM layer.
-          </p>
-        </article>
-        <article className="card">
-          <h2 className="card-title">3. Recommendations</h2>
-          <p className="card-body">
-            Jobs load from <code>merged_jobs</code>; scores are saved to <code>matching_history</code>.
-          </p>
-        </article>
+        </div>
+        <Link className="btn btn-primary" to="/jobs">
+          Open job catalog <span aria-hidden="true">→</span>
+        </Link>
       </section>
     </div>
   );

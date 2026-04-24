@@ -154,6 +154,22 @@ export function JobsPage() {
 
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
 
+  const hasUnappliedChanges = useMemo(
+    () => JSON.stringify(draft) !== JSON.stringify(applied),
+    [draft, applied],
+  );
+
+  const hasAppliedFilters = useMemo(() => {
+    const fields: (keyof Draft)[] = [
+      'locationSel',
+      'categorySel',
+      'jobTypeSel',
+      'sourceSel',
+      'keywordSel',
+    ];
+    return fields.some((k) => applied[k]);
+  }, [applied]);
+
   useEffect(() => {
     const tp = Math.max(1, Math.ceil(total / pageSize));
     if (page > tp) setPage(tp);
@@ -323,10 +339,20 @@ export function JobsPage() {
           ) : null}
         </div>
 
-        <div className="field" style={{ alignSelf: 'flex-end' }}>
-          <button type="button" className="btn btn-primary" onClick={applyFilters} disabled={loading}>
+        <div className="field jobs-filter-apply" style={{ alignSelf: 'flex-end' }}>
+          <button
+            type="button"
+            className={`btn btn-primary${hasUnappliedChanges ? ' btn-primary-pulse' : ''}`}
+            onClick={applyFilters}
+            disabled={loading}
+          >
             Apply filters
           </button>
+          {hasUnappliedChanges ? (
+            <span className="jobs-filter-pending" aria-live="polite">
+              Click to apply your changes
+            </span>
+          ) : null}
         </div>
         <div className="field" style={{ alignSelf: 'flex-end' }}>
           <button type="button" className="btn btn-ghost" onClick={clearFilters} disabled={loading}>
@@ -345,6 +371,24 @@ export function JobsPage() {
       ) : null}
 
       {err ? <StatusBanner kind="error" title="Couldn’t load jobs" detail={err} /> : null}
+
+      {!loading && !err && items.length === 0 ? (
+        <div className="jobs-empty-card">
+          <h2 className="jobs-empty-title">
+            {hasAppliedFilters ? 'No jobs match these filters' : 'No jobs found'}
+          </h2>
+          <p className="jobs-empty-text">
+            {hasAppliedFilters
+              ? 'Try removing some filters — location, category or job type often narrow results a lot.'
+              : 'The job database appears to be empty. Ask your admin to import some jobs, or check back later.'}
+          </p>
+          {hasAppliedFilters ? (
+            <button type="button" className="btn btn-ghost" onClick={clearFilters}>
+              Clear all filters
+            </button>
+          ) : null}
+        </div>
+      ) : null}
 
       <ul className="job-list">
         {items.map((j) => {

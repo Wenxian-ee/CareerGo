@@ -38,8 +38,11 @@ export function RegisterPage() {
   return (
     <div className="page narrow-page page-auth">
       <header className="page-head">
-        <h1 className="page-title">Register</h1>
-        <p className="page-sub">After sign-up you can fill in a full profile aligned with MatchingRanking.</p>
+        <h1 className="page-title">Create your account</h1>
+        <p className="page-sub">
+          Takes under a minute. After sign-up you can fill in a profile and get personalised job
+          recommendations with match scores and AI-powered analysis.
+        </p>
       </header>
 
       {err ? <StatusBanner kind="error" title="Registration failed" detail={err} /> : null}

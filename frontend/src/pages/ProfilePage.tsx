@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { api } from '@/api/client';
 import type {
@@ -358,6 +358,30 @@ export function ProfilePage() {
     }
   }
 
+  const completion = useMemo(() => {
+    if (!form) return { score: 0, total: 10 };
+    const c = form.constraints ?? { locations: [], industries: [], company_types: [] };
+    let score = 0;
+    if ((form.name || '').trim().length >= 1) score++;
+    if (form.education?.some((e) => (e.school || '').trim() && (e.major || '').trim())) score++;
+    if (form.skills?.some((s) => (s.name || '').trim())) score++;
+    if (form.preferences?.some((p) => (p.value || '').trim())) score++;
+    if ((textDrafts.locations || '').trim() || (c.locations || []).length > 0) score++;
+    if (c.min_salary != null || c.max_salary != null) score++;
+    if ((c.work_type || '').trim()) score++;
+    if (
+      (c.industries || []).length > 0 ||
+      (c.company_types || []).length > 0 ||
+      (textDrafts.industriesCustom || '').trim() ||
+      (textDrafts.companyTypesCustom || '').trim()
+    ) {
+      score++;
+    }
+    if ((form.work_experience?.length ?? 0) > 0 || (textDrafts.certs || '').trim()) score++;
+    if ((textDrafts.langs || '').trim() || (form.projects?.length ?? 0) > 0) score++;
+    return { score, total: 10 };
+  }, [form, textDrafts]);
+
   if (!token) {
     return (
       <div className="page page-narrow-centered">
@@ -448,9 +472,38 @@ export function ProfilePage() {
       <header className="page-head">
         <h1 className="page-title">My profile</h1>
         <p className="page-sub">
-          Same fields as <code>user_profile.UserProfile</code> and the database, used for matching and ranking.
+          Fill in what&apos;s relevant — we use this to match you to jobs, rank them, and suggest what to learn
+          next. Save at any time; you can come back and update later.
         </p>
       </header>
+
+      <div
+        className="profile-completion"
+        role="group"
+        aria-label={`Profile completeness ${completion.score} of ${completion.total}`}
+      >
+        <div className="profile-completion-head">
+          <span className="profile-completion-label">Profile completeness</span>
+          <span className="profile-completion-count">
+            {completion.score} / {completion.total}
+          </span>
+        </div>
+        <div className="profile-completion-track">
+          <div
+            className="profile-completion-fill"
+            style={{ width: `${(completion.score / completion.total) * 100}%` }}
+          />
+        </div>
+        <p className="profile-completion-hint">
+          {completion.score >= completion.total
+            ? 'Great — your profile is fully filled in. Save to apply changes.'
+            : completion.score >= 7
+              ? 'Looking good. A few more fields will sharpen your recommendations.'
+              : completion.score >= 4
+                ? 'Nice start. Add more details (skills, locations, salary) for better matches.'
+                : 'Fill in at least your name, education, skills and preferred locations to start getting useful matches.'}
+        </p>
+      </div>
 
       {loadWarning ? (
         <StatusBanner
