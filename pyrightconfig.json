@@ -15,11 +15,23 @@
     "SkillExtraction/models",
     "SkillExtraction/data"
   ],
-  "extraPaths": [
-    "api",
-    "Crawler",
-    "MatchingRanking",
-    "SkillExtraction"
+  "executionEnvironments": [
+    {
+      "root": "api",
+      "extraPaths": ["api", "MatchingRanking", "."]
+    },
+    {
+      "root": "MatchingRanking",
+      "extraPaths": ["MatchingRanking", "."]
+    },
+    {
+      "root": "SkillExtraction",
+      "extraPaths": ["SkillExtraction", "."]
+    },
+    {
+      "root": "Crawler",
+      "extraPaths": ["Crawler", "."]
+    }
   ],
   "pythonVersion": "3.10",
   "typeCheckingMode": "basic",
