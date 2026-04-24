@@ -1,0 +1,1034 @@
+{
+  "jobs": [
+    {
+      "id": "job:adzuna_5595576119",
+      "job_id": "adzuna_5595576119",
+      "title": "Junior School Administrator",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595574030",
+      "job_id": "adzuna_5595574030",
+      "title": "Senior Product Developer",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595345434",
+      "job_id": "adzuna_5595345434",
+      "title": "Junior Edit Assistant",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5596266333",
+      "job_id": "adzuna_5596266333",
+      "title": "Compensation Lead Analyst",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5597120725",
+      "job_id": "adzuna_5597120725",
+      "title": "Senior Manager, Regional Compensation Programs (EMEA)",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595600260",
+      "job_id": "adzuna_5595600260",
+      "title": "Junior Live Ops Artist",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5596281994",
+      "job_id": "adzuna_5596281994",
+      "title": "Graduate Civil Engineer - Buildings",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5597151285",
+      "job_id": "adzuna_5597151285",
+      "title": "Tax Assistant - Graduate - Stoke - September 2026",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595582973",
+      "job_id": "adzuna_5595582973",
+      "title": "Graduate Civil Engineer - Buildings",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595230687",
+      "job_id": "adzuna_5595230687",
+      "title": "Multi-skilled Engineer",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595253631",
+      "job_id": "adzuna_5595253631",
+      "title": "KPMG 2026 Abilities Talent Insight Programmes",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595253629",
+      "job_id": "adzuna_5595253629",
+      "title": "KPMG 2026 Black Heritage Talent Insight Programmes",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595579554",
+      "job_id": "adzuna_5595579554",
+      "title": "Senior Scientist I, Product Development (55131)",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595315090",
+      "job_id": "adzuna_5595315090",
+      "title": "Paid Social Executive",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595580691",
+      "job_id": "adzuna_5595580691",
+      "title": "Technical Data Analyst Associate",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595951314",
+      "job_id": "adzuna_5595951314",
+      "title": "Marketing Insight Analyst",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595253632",
+      "job_id": "adzuna_5595253632",
+      "title": "KPMG 2026 Social Mobility Talent Insight Programmes",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595578033",
+      "job_id": "adzuna_5595578033",
+      "title": "Firmware Engineer",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595253630",
+      "job_id": "adzuna_5595253630",
+      "title": "KPMG 2026 Audit Vacation Programme",
+      "type": "job"
+    },
+    {
+      "id": "job:adzuna_5595771326",
+      "job_id": "adzuna_5595771326",
+      "title": "Examinations Officer – Burton-upon-Trent, Staffordshire – January 2026",
+      "type": "job"
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill:mechanics",
+      "name": "mechanics",
+      "type": "skill"
+    },
+    {
+      "id": "skill:communication",
+      "name": "communication",
+      "type": "skill"
+    },
+    {
+      "id": "skill:work independently",
+      "name": "work independently",
+      "type": "skill"
+    },
+    {
+      "id": "skill:tax laws",
+      "name": "tax laws",
+      "type": "skill"
+    },
+    {
+      "id": "skill:computer technology",
+      "name": "computer technology",
+      "type": "skill"
+    },
+    {
+      "id": "skill:MRO",
+      "name": "MRO",
+      "type": "skill"
+    },
+    {
+      "id": "skill:Assembly",
+      "name": "Assembly",
+      "type": "skill"
+    },
+    {
+      "id": "skill:IT",
+      "name": "IT",
+      "type": "skill"
+    },
+    {
+      "id": "skill:LEDs",
+      "name": "LEDs",
+      "type": "skill"
+    },
+    {
+      "id": "skill:RE",
+      "name": "RE",
+      "type": "skill"
+    },
+    {
+      "id": "skill:brands",
+      "name": "brands",
+      "type": "skill"
+    },
+    {
+      "id": "skill:design",
+      "name": "design",
+      "type": "skill"
+    },
+    {
+      "id": "skill:government administration",
+      "name": "government administration",
+      "type": "skill"
+    },
+    {
+      "id": "skill:R",
+      "name": "R",
+      "type": "skill"
+    },
+    {
+      "id": "skill:Salt",
+      "name": "Salt",
+      "type": "skill"
+    },
+    {
+      "id": "skill:microchip",
+      "name": "microchip",
+      "type": "skill"
+    },
+    {
+      "id": "skill:C++",
+      "name": "C++",
+      "type": "skill"
+    },
+    {
+      "id": "skill:FDA",
+      "name": "FDA",
+      "type": "skill"
+    },
+    {
+      "id": "skill:Io",
+      "name": "Io",
+      "type": "skill"
+    },
+    {
+      "id": "skill:develop products",
+      "name": "develop products",
+      "type": "skill"
+    },
+    {
+      "id": "skill:managing project",
+      "name": "managing project",
+      "type": "skill"
+    },
+    {
+      "id": "skill:managing projects",
+      "name": "managing projects",
+      "type": "skill"
+    },
+    {
+      "id": "skill:plan",
+      "name": "plan",
+      "type": "skill"
+    },
+    {
+      "id": "skill:public health",
+      "name": "public health",
+      "type": "skill"
+    },
+    {
+      "id": "skill:SaaS",
+      "name": "SaaS",
+      "type": "skill"
+    },
+    {
+      "id": "skill:fuel",
+      "name": "fuel",
+      "type": "skill"
+    },
+    {
+      "id": "skill:civil engineering",
+      "name": "civil engineering",
+      "type": "skill"
+    },
+    {
+      "id": "skill:3D graphics",
+      "name": "3D graphics",
+      "type": "skill"
+    },
+    {
+      "id": "skill:principles of AI",
+      "name": "principles of AI",
+      "type": "skill"
+    },
+    {
+      "id": "skill:UAS",
+      "name": "UAS",
+      "type": "skill"
+    },
+    {
+      "id": "skill:Adobe Creative Cloud",
+      "name": "Adobe Creative Cloud",
+      "type": "skill"
+    },
+    {
+      "id": "skill:FICT",
+      "name": "FICT",
+      "type": "skill"
+    },
+    {
+      "id": "skill:IPM",
+      "name": "IPM",
+      "type": "skill"
+    },
+    {
+      "id": "skill:Unity",
+      "name": "Unity",
+      "type": "skill"
+    },
+    {
+      "id": "skill:iconography",
+      "name": "iconography",
+      "type": "skill"
+    },
+    {
+      "id": "skill:motion graphic",
+      "name": "motion graphic",
+      "type": "skill"
+    },
+    {
+      "id": "skill:motion graphics",
+      "name": "motion graphics",
+      "type": "skill"
+    },
+    {
+      "id": "skill:typography",
+      "name": "typography",
+      "type": "skill"
+    },
+    {
+      "id": "skill:visual design",
+      "name": "visual design",
+      "type": "skill"
+    },
+    {
+      "id": "skill:Email",
+      "name": "Email",
+      "type": "skill"
+    },
+    {
+      "id": "skill:geography",
+      "name": "geography",
+      "type": "skill"
+    },
+    {
+      "id": "skill:stats",
+      "name": "stats",
+      "type": "skill"
+    },
+    {
+      "id": "skill:Emaze",
+      "name": "Emaze",
+      "type": "skill"
+    },
+    {
+      "id": "skill:planning performance",
+      "name": "planning performance",
+      "type": "skill"
+    },
+    {
+      "id": "skill:measurement",
+      "name": "measurement",
+      "type": "skill"
+    },
+    {
+      "id": "skill:lead",
+      "name": "lead",
+      "type": "skill"
+    },
+    {
+      "id": "skill:civil law",
+      "name": "civil law",
+      "type": "skill"
+    },
+    {
+      "id": "skill:work with engineers",
+      "name": "work with engineers",
+      "type": "skill"
+    },
+    {
+      "id": "skill:enjoy working",
+      "name": "enjoy working",
+      "type": "skill"
+    },
+    {
+      "id": "skill:hire people",
+      "name": "hire people",
+      "type": "skill"
+    },
+    {
+      "id": "skill:TOC",
+      "name": "TOC",
+      "type": "skill"
+    },
+    {
+      "id": "skill:CTA",
+      "name": "CTA",
+      "type": "skill"
+    },
+    {
+      "id": "skill:English",
+      "name": "English",
+      "type": "skill"
+    },
+    {
+      "id": "skill:Irish",
+      "name": "Irish",
+      "type": "skill"
+    },
+    {
+      "id": "skill:show originality",
+      "name": "show originality",
+      "type": "skill"
+    },
+    {
+      "id": "skill:rs",
+      "name": "rs",
+      "type": "skill"
+    },
+    {
+      "id": "skill:natural science",
+      "name": "natural science",
+      "type": "skill"
+    },
+    {
+      "id": "skill:curiosity",
+      "name": "curiosity",
+      "type": "skill"
+    },
+    {
+      "id": "skill:government policy",
+      "name": "government policy",
+      "type": "skill"
+    },
+    {
+      "id": "skill:interaction",
+      "name": "interaction",
+      "type": "skill"
+    },
+    {
+      "id": "skill:maths",
+      "name": "maths",
+      "type": "skill"
+    },
+    {
+      "id": "skill:meet deadlines",
+      "name": "meet deadlines",
+      "type": "skill"
+    },
+    {
+      "id": "skill:sounds",
+      "name": "sounds",
+      "type": "skill"
+    },
+    {
+      "id": "skill:tax rules",
+      "name": "tax rules",
+      "type": "skill"
+    }
+  ],
+  "edges": {
+    "job_skill": [
+      {
+        "source": "job:adzuna_5595230687",
+        "target": "skill:mechanics",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595230687",
+        "target": "skill:communication",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595230687",
+        "target": "skill:work independently",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253629",
+        "target": "skill:tax laws",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253629",
+        "target": "skill:computer technology",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253630",
+        "target": "skill:tax laws",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253630",
+        "target": "skill:computer technology",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253631",
+        "target": "skill:tax laws",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253631",
+        "target": "skill:computer technology",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253632",
+        "target": "skill:MRO",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253632",
+        "target": "skill:tax laws",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253632",
+        "target": "skill:computer technology",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595315090",
+        "target": "skill:Assembly",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595315090",
+        "target": "skill:IT",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595315090",
+        "target": "skill:LEDs",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595315090",
+        "target": "skill:RE",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595315090",
+        "target": "skill:brands",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595345434",
+        "target": "skill:brands",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595574030",
+        "target": "skill:brands",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595574030",
+        "target": "skill:design",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595576119",
+        "target": "skill:government administration",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595576119",
+        "target": "skill:R",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595576119",
+        "target": "skill:Salt",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595578033",
+        "target": "skill:microchip",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595578033",
+        "target": "skill:microchip",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595578033",
+        "target": "skill:communication",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595578033",
+        "target": "skill:design",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595579554",
+        "target": "skill:C++",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595579554",
+        "target": "skill:FDA",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595579554",
+        "target": "skill:Io",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595579554",
+        "target": "skill:develop products",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595579554",
+        "target": "skill:managing project",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595579554",
+        "target": "skill:managing projects",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595579554",
+        "target": "skill:plan",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595579554",
+        "target": "skill:public health",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595580691",
+        "target": "skill:SaaS",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595580691",
+        "target": "skill:brands",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595580691",
+        "target": "skill:fuel",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595582973",
+        "target": "skill:RE",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595582973",
+        "target": "skill:civil engineering",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:3D graphics",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:principles of AI",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:UAS",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:Adobe Creative Cloud",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:FICT",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:IPM",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:RE",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:Unity",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:design",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:iconography",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:motion graphic",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:motion graphics",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:typography",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595600260",
+        "target": "skill:visual design",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595771326",
+        "target": "skill:Email",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595771326",
+        "target": "skill:communication",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595771326",
+        "target": "skill:geography",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595771326",
+        "target": "skill:stats",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595951314",
+        "target": "skill:Emaze",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595951314",
+        "target": "skill:planning performance",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595951314",
+        "target": "skill:RE",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595951314",
+        "target": "skill:measurement",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5596266333",
+        "target": "skill:lead",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5596281994",
+        "target": "skill:civil law",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5596281994",
+        "target": "skill:work with engineers",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5596281994",
+        "target": "skill:civil engineering",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597120725",
+        "target": "skill:enjoy working",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597120725",
+        "target": "skill:hire people",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597120725",
+        "target": "skill:TOC",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:CTA",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:Email",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:English",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:IT",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:Irish",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:show originality",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:RE",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:rs",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:natural science",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:communication",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:curiosity",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:government policy",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:interaction",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:maths",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:meet deadlines",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:plan",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:sounds",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:stats",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:tax laws",
+        "type": "has_skill",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5597151285",
+        "target": "skill:tax rules",
+        "type": "has_skill",
+        "weight": 1.0
+      }
+    ],
+    "related_roles": [
+      {
+        "source": "job:adzuna_5595253629",
+        "target": "job:adzuna_5595253630",
+        "type": "related_role",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253629",
+        "target": "job:adzuna_5595253631",
+        "type": "related_role",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253629",
+        "target": "job:adzuna_5595253632",
+        "type": "related_role",
+        "weight": 0.6666666666666666
+      },
+      {
+        "source": "job:adzuna_5595253630",
+        "target": "job:adzuna_5595253631",
+        "type": "related_role",
+        "weight": 1.0
+      },
+      {
+        "source": "job:adzuna_5595253630",
+        "target": "job:adzuna_5595253632",
+        "type": "related_role",
+        "weight": 0.6666666666666666
+      },
+      {
+        "source": "job:adzuna_5595253631",
+        "target": "job:adzuna_5595253632",
+        "type": "related_role",
+        "weight": 0.6666666666666666
+      },
+      {
+        "source": "job:adzuna_5595345434",
+        "target": "job:adzuna_5595574030",
+        "type": "related_role",
+        "weight": 0.5
+      },
+      {
+        "source": "job:adzuna_5595345434",
+        "target": "job:adzuna_5595580691",
+        "type": "related_role",
+        "weight": 0.3333333333333333
+      }
+    ]
+  }
+}

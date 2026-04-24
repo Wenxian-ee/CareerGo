@@ -1,0 +1,70 @@
+# -------- Secrets / environment files (NEVER commit) --------
+.env
+.env.*
+!.env.example
+
+# -------- Python --------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Virtualenvs / conda envs
+.venv/
+venv/
+env/
+.env.d/
+.conda/
+
+# -------- Jupyter --------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# -------- Logs & runtime artifacts --------
+*.log
+logs/
+/Crawler/logs/
+/SkillExtraction/logs/
+
+# -------- Data exports / local caches --------
+*.csv
+results_db.json
+/dataset/
+/SkillExtraction/data/
+/SkillExtraction/models/
+/run_pipeline.log
+/skill_ontology_graph.json
+/skill_ontology_d3.json
+
+# -------- Frontend (Node) --------
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*.local
+frontend/*.local
+
+# -------- IDE / OS --------
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+

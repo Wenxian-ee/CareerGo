@@ -1,0 +1,12 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.9
+passlib>=1.7.4
+PyJWT>=2.9.0
+pydantic>=2.9.0
+psycopg2-binary>=2.9.9
+python-dotenv>=1.0.0
+requests>=2.31.0
+# SkillNormalizer (profile save -> user_normalized_skills) loads
+# SkillExtraction.skill_normalizer which depends on sentence-transformers.
+sentence-transformers>=2.2.0

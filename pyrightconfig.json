@@ -1,0 +1,28 @@
+{
+  "include": [
+    "api",
+    "Crawler",
+    "MatchingRanking",
+    "SkillExtraction"
+  ],
+  "exclude": [
+    "**/__pycache__",
+    "**/.ipynb_checkpoints",
+    "**/node_modules",
+    ".conda",
+    ".venv",
+    "venv",
+    "SkillExtraction/models",
+    "SkillExtraction/data"
+  ],
+  "extraPaths": [
+    "api",
+    "Crawler",
+    "MatchingRanking",
+    "SkillExtraction"
+  ],
+  "pythonVersion": "3.10",
+  "typeCheckingMode": "basic",
+  "reportMissingImports": "warning",
+  "reportMissingTypeStubs": "none"
+}
